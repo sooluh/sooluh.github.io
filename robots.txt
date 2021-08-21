@@ -1,0 +1,5 @@
+User-agent: AwesomeTechStack
+Disallow: /
+
+User-agent: *
+Disallow: /links/
