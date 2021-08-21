@@ -1,0 +1,26 @@
+@import "globals";
+@import "darkmode";
+@import "typography";
+@import "layout";
+@import "sooluh";
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  color: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-primary);
+}

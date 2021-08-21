@@ -1,0 +1,13 @@
+$color-yellow: #ffde00;
+$color-blue: #0096ff;
+
+$color-focus: darken(desaturate($color-blue, 25%), 10%);
+
+$color-dark: #001020;
+$color-darkish: desaturate(lighten($color-dark, 5%), 40%);
+$color-light: #f8f9fa;
+$color-secondary: darken($color-light, 55%);
+$color-dark-secondary: darken($color-light, 45%);
+
+$color-black: #000;
+$color-white: #fff;

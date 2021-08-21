@@ -1,0 +1,47 @@
+@import "colors";
+@import "vars";
+
+body,
+body.light {
+  --color-yellow: #{$color-yellow};
+  --color-blue: #{$color-blue};
+
+  --color-primary: #{$color-black};
+  --color-secondary: #{$color-secondary};
+  --color-background: #{$color-white};
+
+  --color-d-primary: #{$color-white};
+  --color-d-secondary: #{$color-dark-secondary};
+  --color-d-background: #{$color-dark};
+
+  --color-focus: #{$color-focus};
+
+  --subtle-shadow: 0 #{$spacer / 4} #{$spacer} #0002;
+  --subtle-shadow-pop: 0 #{$spacer / 4} #{$spacer} #0003;
+
+  --color-subtle: #0001;
+}
+
+body {
+  @media (prefers-color-scheme: dark) {
+    --color-background: #{$color-darkish};
+    --color-d-primary: #{$color-light};
+    --color-primary: #{$color-light};
+    --color-secondary: #{$color-dark-secondary};
+    --subtle-shadow: 0 #{$spacer / 4} #{$spacer} #0004;
+    --subtle-shadow-pop: 0 #{$spacer / 4} #{$spacer} #0005;
+    --color-focus: #{$color-blue};
+    --color-subtle: #fff1;
+  }
+}
+
+body.dark {
+  --color-background: #{$color-darkish};
+  --color-d-primary: #{$color-light};
+  --color-primary: #{$color-light};
+  --color-secondary: #{$color-dark-secondary};
+  --subtle-shadow: 0 #{$spacer / 4} #{$spacer} #0004;
+  --subtle-shadow-pop: 0 #{$spacer / 4} #{$spacer} #0005;
+  --color-focus: #{$color-blue};
+  --color-subtle: #fff1;
+}

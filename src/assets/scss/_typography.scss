@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "LemonMilk";
+  src: url("/font/lemon-milk.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("/font/work-sans.woff2") format("woff2 supports variations"),
+    url("/font/work-sans.woff2") format("woff2-variations"), url("/font/work-sans.woff") format("woff");
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 350 425;
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-weight: 350;
+}
+
+*,
+*:before,
+*:after {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 425;
+  margin: 0;
+  padding: 0;
+}
