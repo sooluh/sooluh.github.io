@@ -10,9 +10,7 @@
       </div>
     </article>
 
-    <Footer :tags="$page.article.tags" />
-
-    <Disqus :title="$page.article.title" />
+    <Footer :tags="$page.article.tags" :title="$page.article.title" />
   </Layout>
 </template>
 
@@ -43,7 +41,6 @@ import { formattedDate } from "~/assets/js/utils.js";
 import Header from "~/components/article/Header.vue";
 import Scroll from "~/components/article/Scroll.vue";
 const Footer = () => import("~/components/article/Footer.vue");
-import Disqus from "~/components/article/Disqus.vue";
 
 export default {
   components: {
@@ -76,4 +73,8 @@ export default {
 
 <style lang="scss">
 @import "~/assets/scss/_articles.scss";
+
+article > .container > div > p:last-child {
+  margin-bottom: 0;
+}
 </style>

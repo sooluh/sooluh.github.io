@@ -5,12 +5,22 @@
         <li v-for="(tag, key) in tags" v-bind:key="key">#{{ tag }}</li>
       </ul>
     </div>
+
+    <div class="container">
+      <div class="post-comments">
+        <Disqus :title="title" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   props: {
+    title: {
+      type: String,
+      default: "",
+    },
     tags: {
       type: Array,
       default: () => [],
@@ -43,5 +53,9 @@ ul {
     margin-right: $spacer / 2;
     border-radius: $spacer / 2;
   }
+}
+
+.post-comments {
+  margin-top: $spacer;
 }
 </style>
