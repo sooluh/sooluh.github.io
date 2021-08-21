@@ -34,7 +34,7 @@ nav {
 
 .links a {
   text-decoration: none;
-  margin: $spacer / 4 $spacer / 2;
+  margin: $spacer / 4;
   color: var(--color-d-primary);
   position: relative;
   text-shadow: -2px 0px 0px var(--color-d-background),
