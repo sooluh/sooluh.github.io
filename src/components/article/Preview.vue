@@ -1,0 +1,91 @@
+<template functional>
+  <g-link
+    :class="[data.class, data.staticClass]"
+    :aria-label="`Baca Artikel ${props.title}`"
+    :to="props.path"
+    class="card"
+  >
+    <article class="card-body">
+      <div class="titlebar">
+        <h3>{{ props.title }}</h3>
+
+        <div class="meta">
+          {{ props.timeToRead }} menit baca &#8226; {{ props.date }}
+        </div>
+      </div>
+
+      <p v-if="props.description" class="description">
+        {{ props.description }}
+      </p>
+    </article>
+  </g-link>
+</template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: "",
+    },
+    path: {
+      type: String,
+      default: "",
+    },
+    description: {
+      type: String,
+      default: "",
+    },
+    date: {
+      type: String,
+      default: -1,
+    },
+    timeToRead: {
+      type: Number,
+      default: null,
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .meta {
+    margin-top: $spacer / 2;
+  }
+
+  @include sm {
+    flex-direction: row;
+    align-items: flex-start;
+
+    .meta {
+      margin: 0;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  display: block;
+
+  &:hover h2 {
+    text-decoration: underline;
+  }
+}
+
+.description {
+  margin: 0;
+  margin-top: $spacer / 2;
+  color: var(--color-secondary);
+}
+
+.meta {
+  color: var(--color-secondary);
+  font-size: 0.825em;
+  flex-shrink: 0;
+}
+</style>
