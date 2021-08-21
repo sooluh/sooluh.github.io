@@ -35,12 +35,6 @@ module.exports = {
       options: {
         token: '183d4e84272c4b3c9a13e841298129df'
       }
-    },
-    {
-      use: "gridsome-plugin-disqus",
-      options: {
-        shortname: "suluh"
-      }
     }
   ],
 

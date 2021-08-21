@@ -1,5 +1,5 @@
 {
-  "name": "sooluh.my.id",
+  "name": "suluh.my.id",
   "private": true,
   "engines": {
     "node": "10.x"
@@ -15,15 +15,14 @@
   "dependencies": {
     "@gridsome/remark-prismjs": "^0.3.0",
     "@securized/plugin-cloudflare-analytics": "^0.1.1",
-    "gh-pages": "^3.2.3",
     "gridsome": "^0.7.22",
-    "gridsome-plugin-disqus": "^1.0.3",
     "lodash": "^4.17.20",
     "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
+    "gh-pages": "^3.2.3",
     "js-yaml": "^4.1.0",
     "sass": "^1.29.0",
     "sass-loader": "^8.0.2",
