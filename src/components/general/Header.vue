@@ -18,6 +18,10 @@ header {
   background: var(--color-d-background);
   color: var(--color-d-primary);
   padding: $spacer;
+
+  .sooluh {
+    padding-right: $spacer;
+  }
 }
 
 nav {
@@ -30,6 +34,7 @@ nav {
 .links {
   display: flex;
   flex-direction: row;
+  padding: $spacer 0;
 }
 
 .links a {
